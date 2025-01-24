@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>DELTA'S</title>
@@ -5,6 +7,18 @@
   <style>
     form {
       display: none;
+      margin-top: 20px;
+    }
+    input {
+      display: block;
+      margin-bottom: 10px;
+      padding: 10px;
+      width: 100%;
+      max-width: 300px;
+    }
+    #error {
+      color: red;
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -12,16 +26,16 @@
 <body>
   <div id="main">
     <h1>DELTA SHOP</h1>
-    <p>shopping with delta</p>
-    <img src="https://img.freepik.com/free-vector/flat-design-delta-logo-design_23-2149484188.jpg">
+    <p>Shopping with Delta</p>
+    <img src="https://img.freepik.com/free-vector/flat-design-delta-logo-design_23-2149484188.jpg" alt="Delta Logo">
     <button id="BUY">GO</button>
   </div>
   <form id="form">
-    <input type="text" placeholder="name" id="user_name">
+    <input type="text" placeholder="Name" id="user_name">
     <input type="text" placeholder="Email" id="user_email">
     <input type="text" placeholder="Telephone" id="user_phone">
     <div id="error"></div>
-    <button type="button" id="order">arrange</button>
+    <button type="button" id="order">Arrange</button>
   </form>
 
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
@@ -41,29 +55,33 @@
       let email = document.getElementById("user_email").value;
       let telephone = document.getElementById("user_phone").value;
 
-
+      // Проверка на пустые значения
       if (name.length <= 3) {
-        document.getElementById("error").innerText = 'Ошибка в имени'
+        document.getElementById("error").innerText = 'Ошибка в имени';
         return;
       }
-      if (Email.length < 5) {
-        document.getElementById("error").innerText = 'Ошибка в email'
+      if (email.length < 5) {
+        document.getElementById("error").innerText = 'Ошибка в email';
         return;
       }
-      if (Telephone.length < 5) {
-        document.getElementById("error").innerText = 'Ошибка в номере телефона'
+      if (telephone.length < 5) {
+        document.getElementById("error").innerText = 'Ошибка в номере телефона';
         return;
       }
 
       let data = {
         name: name,
-        Email: Email,
-        Telephone: Telephone,
-      }
+        Email: email,
+        Telephone: telephone,
+      };
+
+      // Отправка данных
       tg.sendData(JSON.stringify(data));
-
-
+      
+      // Закрытие приложения после отправки данных
       tg.close();
     });
   </script>
 </body>
+</html>
+
