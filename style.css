@@ -76,6 +76,73 @@ button {
 
 /* Эффект при наведении на кнопку */
 button:hover {
-  background-color: #218838;
+  background-color: #1f3323;
   /* Цвет фона при наведении */
+}
+
+form {
+  display: none;
+  text-align: center;
+}
+
+/* Общие стили для формы */
+#form {
+  background-color: #f9f9f9;
+  /* Светлый фон для формы */
+  border: 1px solid #ccc;
+  /* Серый бордер */
+  border-radius: 8px;
+  /* Закругленные углы */
+  padding: 20px;
+  /* Внутренние отступы */
+  max-width: 400px;
+  /* Максимальная ширина формы */
+  margin: 20px auto;
+  /* Центрирование формы на странице */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Небольшая тень */
+}
+
+/* Стили для полей ввода */
+#form input[type="text"] {
+  width: 100%;
+  /* Полная ширина */
+  padding: 10px;
+  /* Внутренние отступы */
+  margin: 10px 0;
+  /* Отступы сверху и снизу */
+  border: 1px solid #ccc;
+  /* Серый бордер */
+  border-radius: 4px;
+  /* Закругленные углы */
+  font-size: 16px;
+  /* Размер шрифта */
+}
+
+/* Стили для кнопок */
+#form button {
+  background-color: #4CAF50;
+  /* Зеленый фон */
+  color: white;
+  /* Белый текст */
+  padding: 10px;
+  /* Внутренние отступы */
+  border: none;
+  /* Убираем бордер */
+  border-radius: 4px;
+  /* Закругленные углы */
+  cursor: pointer;
+  /* Указатель при наведении */
+  font-size: 16px;
+  /* Размер шрифта */
+  width: 100%;
+  /* Полная ширина кнопки */
+  transition: background-color 0.3s;
+  /* Плавный переход цвета фона */
+}
+
+/* Эффект при наведении на кнопку */
+#form button:hover {
+  background-color: #45a049;
+  /* Темнее зеленый при наведении */
 }
