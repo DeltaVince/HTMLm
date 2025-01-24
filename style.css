@@ -80,11 +80,15 @@ button:hover {
   /* Цвет фона при наведении */
 }
 
+#form {
+  text-align: center;
+}
+
 /* Общие стили для формы */
 #form {
-  background-color: #f9f9f9;
+  background-color: #387479;
   /* Светлый фон для формы */
-  border: 1px solid #ccc;
+  border: 1px solid #4f9782;
   /* Серый бордер */
   border-radius: 8px;
   /* Закругленные углы */
@@ -106,7 +110,7 @@ button:hover {
   /* Внутренние отступы */
   margin: 10px 0;
   /* Отступы сверху и снизу */
-  border: 1px solid #ccc;
+  border: 1px solid #915454;
   /* Серый бордер */
   border-radius: 4px;
   /* Закругленные углы */
@@ -116,9 +120,9 @@ button:hover {
 
 /* Стили для кнопок */
 #form button {
-  background-color: #4CAF50;
+  background-color: #447746;
   /* Зеленый фон */
-  color: white;
+  color: rgb(80, 189, 147);
   /* Белый текст */
   padding: 10px;
   /* Внутренние отступы */
