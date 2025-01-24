@@ -1,0 +1,81 @@
+/* Основные стили для body */
+body {
+  font-family: Arial, sans-serif;
+  /* Шрифт */
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  /* Градиентный фон */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Стили для основного контейнера */
+#main {
+  background-color: white;
+  /* Белый фон для контейнера */
+  border-radius: 10px;
+  /* Закругленные углы */
+  padding: 30px;
+  /* Внутренние отступы */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  /* Тень */
+  text-align: center;
+  /* Выравнивание текста по центру */
+}
+
+/* Заголовок */
+h1 {
+  color: #007bff;
+  /* Цвет заголовка */
+  font-size: 2.5em;
+  /* Размер шрифта */
+  margin-bottom: 10px;
+  /* Отступ снизу */
+}
+
+/* Параграф */
+p {
+  color: #6c757d;
+  /* Цвет текста */
+  font-size: 1.2em;
+  /* Размер шрифта */
+  margin-bottom: 20px;
+  /* Отступ снизу */
+}
+
+/* Стили для изображения */
+img {
+  max-width: 100%;
+  /* Максимальная ширина 100% */
+  height: auto;
+  /* Автоматическая высота */
+  border-radius: 10px;
+  /* Закругленные углы для изображения */
+  margin-bottom: 20px;
+  /* Отступ снизу */
+}
+
+/* Кнопка */
+button {
+  background-color: #28a745;
+  /* Цвет фона кнопки */
+  color: white;
+  /* Цвет текста кнопки */
+  border: none;
+  /* Без границы */
+  border-radius: 5px;
+  /* Закругленные углы */
+  padding: 10px 20px;
+  /* Внутренние отступы */
+  font-size: 1.2em;
+  /* Размер шрифта */
+  cursor: pointer;
+  /* Указатель курсора */
+  transition: background-color 0.3s ease;
+  /* Плавный переход цвета фона */
+}
+
+/* Эффект при наведении на кнопку */
+button:hover {
+  background-color: #218838;
+  /* Цвет фона при наведении */
+}
