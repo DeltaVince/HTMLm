@@ -1,88 +1,84 @@
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Основной контейнер */
-#main {
-  text-align: center;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Заголовок */
+/* Стили для заголовка */
 h1 {
-  color: #333;
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Параграф */
+/* Стили для параграфа */
 p {
-  color: #777;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* Картинка */
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin: 10px 0;
-}
-
-/* Кнопка */
+/* Стили для кнопки */
 button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
+    background-color: #ff4757;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
+    background-color: #ff6b81;
+    transform: scale(1.05);
 }
 
-/* Стили формы */
+/* Стили для формы */
 form {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    display: none;
+    margin-top: 20px;
 }
 
-/* Поля ввода */
-input[type="text"] {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+/* Стили для инпутов */
+input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
 }
 
-/* Сообщение об ошибке */
+/* Стили для инпутов при фокусе */
+input:focus {
+    outline: none;
+    border: 2px solid #ff4757;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Стили для сообщения об ошибке */
 #error {
-  color: red;
-  margin: 10px 0;
+    color: #ff4757;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-/* Кнопка заказа */
-#order {
-  background-color: #28a745;
+/* Стили для изображения */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
-
-#order:hover {
-  background-color: #218838;
-}
-
