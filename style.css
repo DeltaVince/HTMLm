@@ -80,13 +80,8 @@ button:hover {
   /* Цвет фона при наведении */
 }
 
-form {
-  display: none;
-  text-align: center;
-}
-
 /* Общие стили для формы */
-#form {
+form {
   background-color: #f9f9f9;
   /* Светлый фон для формы */
   border: 1px solid #ccc;
@@ -104,7 +99,7 @@ form {
 }
 
 /* Стили для полей ввода */
-#form input[type="text"] {
+form input[type="text"] {
   width: 100%;
   /* Полная ширина */
   padding: 10px;
@@ -120,7 +115,7 @@ form {
 }
 
 /* Стили для кнопок */
-#form button {
+form button {
   background-color: #4CAF50;
   /* Зеленый фон */
   color: white;
@@ -142,7 +137,7 @@ form {
 }
 
 /* Эффект при наведении на кнопку */
-#form button:hover {
+form button:hover {
   background-color: #45a049;
   /* Темнее зеленый при наведении */
 }
