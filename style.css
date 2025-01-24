@@ -54,7 +54,7 @@ button:hover {
 }
 
 /* Стили формы */
-#form {
+form {
   display: none;
   background-color: #fff;
   padding: 20px;
