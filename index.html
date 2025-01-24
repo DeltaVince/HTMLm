@@ -13,9 +13,31 @@
     <h1>DELTA SHOP</h1>
     <p>shopping with delta</p>
     <img src="https://img.freepik.com/free-vector/flat-design-delta-logo-design_23-2149484188.jpg">
-    <button id="BUY">buy</button>
+    <button id="BUY">GO</button>
   </div>
+  <form id="form">
+    <input types="text" placeholder="name" id="user_name">
+    <input types="text" placeholder="Email" id="user_email">
+    <input types="text" placeholder="Telephone" id="user_phone">
+    <button id="order">arrange</button>
+  </form>
+
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script>
+    let tg = window.telegram.WebApp;
+    let buy = document.getElementById('BUY')
+    let order = document.getElementById('order')
+
+    buy.addEventListener('click', () => {
+      document.getElementById('main').style.display = "none"
+      document.getElementById('from').style.display = "block"
+      document.getElementById('user_name').value = tg.initDataUnsafe.first_name + " " + tg.initDataUnsafe.last_name
+    });
+    order.addEventListener('click', () => {
+      tg.close();
+    });
+
+  </script>
 
 
 </body>
